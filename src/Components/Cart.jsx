@@ -107,7 +107,7 @@ const Cart = () => {
                               </svg>
                             </button>
                             
-                            <div className="flex border rounded-lg overflow-hidden">
+                            {/* <div className="flex border rounded-lg overflow-hidden">
                               <button 
                                 onClick={() => updateQuantity(item.id, item.qty - 1)}
                                 className="px-2 py-1 bg-gray-50 hover:bg-gray-100 text-green-500 font-bold"
@@ -123,7 +123,7 @@ const Cart = () => {
                               >
                                 +
                               </button>
-                            </div>
+                            </div> */}
                           </div>
                         </div>
                       </div>
