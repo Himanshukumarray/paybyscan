@@ -14,12 +14,12 @@ const QRPage = () => {
           <img 
             src={qrdata} 
             alt="QR Code for Cart Data" 
-             className="w-80 h-80 object-contain" 
-             style={{ imageRendering: "crisp-edges" }}
+             className="w-100 h-100 object-contain" 
+             style={{ imageRendering: "crisp-edge" }}
           />
         </div>
         <div className="flex justify-end">
-            <Link to='/spay' className=" text-black hover:text-blue-600 ">
+            <Link to='/spay' className=" text-black sm:hover:text-blue-500 ">
             back to Scan
             </Link>
         </div>
