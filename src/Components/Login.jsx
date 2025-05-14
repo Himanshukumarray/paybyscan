@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Eye, EyeOff, Facebook, Mail, Lock, QrCode, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function ScanPayLogin() {
   const [email, setEmail] = useState('');
@@ -27,7 +28,7 @@ export default function ScanPayLogin() {
             <QrCode size={40} className="text-blue-600" />
           </div>
           <h1 className="text-3xl font-bold text-gray-800">ScanPay</h1>
-          <p className="mt-2 text-center text-gray-500">Secure payments with a simple scan</p>
+          <p className="mt-2 text-center text-gray-500">Make it possible</p>
         </div>
 
         {/* Login Form */}
@@ -88,7 +89,8 @@ export default function ScanPayLogin() {
             </div>
           </div>
 
-          <button
+          <Link
+            to="/spay"
             type="submit"
             disabled={isLoading}
             className="group relative flex w-full justify-center rounded-lg bg-blue-600 py-3 px-4 text-lg font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:bg-blue-300"
@@ -107,7 +109,7 @@ export default function ScanPayLogin() {
                 <ArrowRight size={20} className="ml-2 transition-transform group-hover:translate-x-1" />
               </span>
             )}
-          </button>
+          </Link>
         </form>
 
         {/* Divider */}

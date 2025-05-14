@@ -15,22 +15,23 @@ const ScanAndPay = () => {
 
       {/* QR Code Placeholder */}
       <div className="mb-8 relative">
-        <div className="w-64 h-64 flex items-center justify-center bg-white rounded-lg shadow-lg p-4">
+        <div className="w-85 h-65 flex items-center justify-center bg-white rounded-lg shadow-2xl p-4">
           <img
-            src="https://cdn-icons-png.flaticon.com/512/5459/5459165.png"
+            src="https://i.pinimg.com/736x/8b/a5/ca/8ba5ca261dd79317adc938160d22fac8.jpg"
             alt="Scan QR"
-            className="w-56 h-56 object-contain"
+            className=" object-contain rounded-lg"
           />
+
         </div>
       </div>
 
       {/* Buttons */}
       <div className="space-y-4 w-full max-w-xs">
-        <div className="w-full bg-blue-500 text-white py-3 rounded-full text-lg font-medium hover:bg-blue-600 flex items-center justify-center cursor-pointer">
+        <div className="w-full bg-blue-500 text-white py-3 rounded-full text-lg font-medium hover:bg-blue-600 flex items-center justify-center cursor-pointer ">
           <FiCamera className="mr-2" /> Start Scanning
         </div>
 
-        <Link to='/checkout' className="w-full border-2 border-gray-300 text-gray-700 py-3 rounded-full text-lg font-medium hover:bg-gray-200 flex items-center justify-center cursor-pointer">
+        <Link to='/checkout' className="w-full border-2 border-gray-300 text-gray-700 py-3 rounded-full text-lg font-medium hover:bg-gray-200 flex items-center justify-center cursor-pointer shadow-2xl">
           Checkout
         </Link>
       </div>
