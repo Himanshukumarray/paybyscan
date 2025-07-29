@@ -21,7 +21,7 @@ const Cart = () => {
   // Calculate subtotal
   const subtotal = cart.reduce((total, item) => total + item.price * item.qty, 0);
 
-  Calculate delivery fee (free over ₹500)
+  // Calculate delivery fee (free over ₹500)
   const deliveryFee = subtotal > 500 ? 0 : 35;
 
   // Calculate total
