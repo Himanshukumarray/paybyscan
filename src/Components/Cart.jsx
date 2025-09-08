@@ -24,7 +24,7 @@ const Cart = () => {
   // Calculate delivery fee (free over ₹500)
   const deliveryFee = subtotal > 500 ? 0 : 35;
 
-  // Calculate total
+  Calculate total
   const total = subtotal + deliveryFee;
 
   // Function to update quantity
